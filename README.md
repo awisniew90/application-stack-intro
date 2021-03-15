@@ -16,6 +16,8 @@
 
 # application-stack-intro
 
+NOTE: This branch does not include a devfile and is intended to demonstrate how the stack's devfile can be downloaded automatically from the devfile registry. 
+
 This app is a simple but complete JAX-RS sample for use with the Open Liberty application stack. It includes a basic REST API, integration tests, and the MicroProfile Config, Health, and Metrics features.
 
 ### Getting Started
@@ -27,14 +29,14 @@ This app is a simple but complete JAX-RS sample for use with the Open Liberty ap
 1. Clone the application-stack-intro repository
 
     ```shell
-    git clone git@github.com:OpenLiberty/application-stack-intro.git
+    git clone -b blog-demo git@github.com:OpenLiberty/application-stack-intro.git
     cd application-stack-intro
     ```
 
 1. Create your odo component
 
     ```shell
-    odo create my-component
+    odo create java-openliberty my-component
     ```
 
 1. Push the sample application to OpenShift
